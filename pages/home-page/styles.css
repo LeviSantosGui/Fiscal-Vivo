@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    background-color: #793bbf;
+    margin-left: 30%;
+    justify-content: center;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
+}
+
+.top-forms-image img {
+    width: 130px;
+    height: 130px;
+}
+
+.top-forms > h1, h4 {
+    color: #f5f5f5;
+}
+
+.box-forms {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50%;
+}
+
+#inputBox, #inputBox-2 {
+    border: 0;
+}
+
+.inputLabel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.inputLabel > input, select {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    background: #532785;
+    color: #f5f5f5;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #5f2e9b;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputLabel > input::placeholder {
+    color: #d8d8d8;
+}
+
+.inputLabel > label {
+    color: #f5f5f5;
+    margin: 5px;
+}
+
+.inputBox::before, .inputBox::after,
+.inputBox-2::before, .inputBox-2::after {
+    display: table;
+}
+
+.inputBox::after, .inputBox-2::after {
+    clear: both;
+}
+
+.inputBox-3 {
+    border: 1.5px solid #5d27a0;
+    border-radius: 5px;
+
+    color: #f5f5f5;
+    background: #662cac;
+    box-shadow: 0px 10px 40px #5f2e9b;
+}
+
+legend {
+    border: 1px solid #5d27a0;
+    border-radius: 8px;
+    padding: 10px;
+
+    text-align: center;
+    color: #f5f5f5;
+    background-color: #7239b8;
+    box-shadow: 0px 10px 40px #5f2e9b;
+}
+
+p {
+    text-align: center;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.agrup-conform {
+    padding-left: 1em;
+}
+
+.button-next {
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    color: #413053;
+    background: #cfb262;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #5c3f7e;
+}
+
+.button-next:hover {
+    transition: 0.2s;
+    background: #f5cf67;
+}
+
+@media only screen and (max-width: 950px) {
+    .inputBox, .inputBox-2, .inputBox-3 {
+        width: 110%;
+    }
+
+    .button-next {
+        width: 110%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inputBox, .inputBox-2, .inputBox-3 {
+        width: 110%;
+    }
+
+    .top-forms {
+        flex-direction: column;
+    }
+
+    .top-forms > h1, h4 {
+        font-size: 0.8em;
+    }
+
+    .box-forms {
+        flex-direction: column;
+    }
+
+    .button-next {
+        width: 110%;
+        height: auto;
+    }
+
+    .top-forms-image img {
+        width: 65px;
+        height: 65px;
+    }
+}
