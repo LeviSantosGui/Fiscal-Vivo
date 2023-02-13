@@ -36,52 +36,7 @@ body {
     margin-right: 50%;
 }
 
-#inputBox, #inputBox-2 {
-    border: 0;
-}
-
-.inputLabel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 5px;
-}
-
-.inputLabel > input, select {
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-
-    background: #532785;
-    color: #f5f5f5;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px #5f2e9b;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.inputLabel > input::placeholder {
-    color: #d8d8d8;
-}
-
-.inputLabel > label {
-    color: #f5f5f5;
-    margin: 5px;
-}
-
-.inputBox::before, .inputBox::after,
-.inputBox-2::before, .inputBox-2::after {
-    display: table;
-}
-
-.inputBox::after, .inputBox-2::after {
-    clear: both;
-}
-
-.inputBox-3 {
+.inputBox {
     border: 1.5px solid #5d27a0;
     border-radius: 5px;
 
@@ -139,7 +94,7 @@ p {
 }
 
 @media only screen and (max-width: 950px) {
-    .inputBox, .inputBox-2, .inputBox-3 {
+    .inputBox {
         width: 110%;
     }
 
@@ -150,7 +105,7 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-    .inputBox, .inputBox-2, .inputBox-3 {
+    .inputBox {
         width: 110%;
     }
 
